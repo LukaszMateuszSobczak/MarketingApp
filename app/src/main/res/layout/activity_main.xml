@@ -17,15 +17,14 @@
             android:id="@+id/text_input_layout_contact_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Contact name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edit_text_contact_name"
+                android:id="@+id/input_edit_text_contact_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Contact name" />
-
+                android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -33,15 +32,15 @@
             android:id="@+id/text_input_layout_contact_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Contact number"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_contact_name">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edit_text_contact_number"
+                android:id="@+id/input_edit_text_contact_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:hint="Contact number" />
+                android:layout_marginTop="8dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -50,15 +49,15 @@
             android:id="@+id/text_input_layout_display_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Display name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_input_layout_contact_number">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edit_text_contact_display_name"
+                android:id="@+id/input_edit_text_contact_display_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:hint="Display name" />
+                android:layout_marginTop="8dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -94,15 +93,15 @@
             android:id="@+id/text_input_layout_available_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Available from date"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/check_box_immediate_start">
 
             <EditText
-                android:id="@+id/edit_text_available_date"
+                android:id="@+id/input_edit_text_available_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:hint="Available from date" />
+                android:layout_marginTop="8dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
