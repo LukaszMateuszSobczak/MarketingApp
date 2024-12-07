@@ -101,7 +101,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/check_box_immediate_start">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_edit_text_available_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
