@@ -15,29 +15,16 @@ import com.lukaszsobczak.marketingapp.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-//    private var previewButton: Button? = null
-//    private var contactNameEditText: TextInputEditText? = null
-//    private var contactNumberEditText: TextInputEditText? = null
-//    private var displayNameEditText: TextInputEditText? = null
-//    private var availableDateEditText: TextInputEditText? = null
-//    private var juniorCheckBox: CheckBox? = null
-//    private var immediateStartCheckBox: CheckBox? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
 
         binding = ActivityMainBinding.inflate(layoutInflater)
-
-//        contactNameEditText = findViewById(R.id.input_edit_text_contact_name)
-//        contactNumberEditText = findViewById(R.id.input_edit_text_contact_number)
-//        displayNameEditText = findViewById(R.id.input_edit_text_contact_display_name)
-//        availableDateEditText = findViewById(R.id.input_edit_text_available_date)
-//        previewButton = findViewById(R.id.button_preview)
-//        juniorCheckBox = findViewById(R.id.check_box_junior)
-//        immediateStartCheckBox = findViewById(R.id.check_box_immediate_start)
+        setContentView(binding.root)
 
         binding.buttonPreview.setOnClickListener {
+
             onPreviewClick()
         }
 
@@ -45,10 +32,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun onPreviewClick() {
 //        Log.d("This my TAG", "contactNameEditText = " + contactNameEditText!!.toString())
-        var contactName = binding.inputEditTextContactName.text.toString()
-        var contactNumber = binding.inputEditTextContactNumber.text.toString()
+        val contactName = binding.inputEditTextContactName.text.toString()
+        val contactNumber = binding.inputEditTextContactNumber.text.toString()
+        val displayName = binding.inputEditTextContactDisplayName.text.toString()
+        val availableDate = binding.inputEditTextAvailableDate.text.toString()
+        val junior = binding.checkBoxJunior.isChecked
+        val immediateStart = binding.checkBoxImmediateStart.isChecked
+        val jobTitle = binding.spinnerJobTitle.selectedItem?.toString()
 
-        var message: String = "Witaj $contactName. Twój numer telefonu to $contactNumber"
+
+        var message: String = "Name: $contactName, Number: $contactNumber, Display name: $displayName, Available date: $availableDate, Junior: $junior, Immediate start: $immediateStart, Job title: $jobTitle"
 
         Toast.makeText(this, message, Toast.LENGTH_LONG).show()
 
