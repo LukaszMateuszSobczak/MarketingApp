@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Marketing App</string>
+    <string name="contact_name">Contact name</string>
+    <string name="contact_number">Contact number</string>
+    <string name="display_name">Display name</string>
+    <string name="include_junior">Include junior</string>
+    <string name="immediate_start">Immediate start</string>
+    <string name="available_from_date">Available from date</string>
+    <string name="previev_message">Previev message</string>
+    <string name="send_message">Send message</string>
 </resources>
